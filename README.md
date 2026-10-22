@@ -58,37 +58,47 @@ A library for language model benchmarking and constrained model selection. It re
 
 ## Technology toolbox
 
-<p align="center"><strong>Languages</strong></p>
+<p align="center"><strong>Programming languages</strong></p>
 <p align="center">
-  <img src="./assets/toolbox/python.svg" alt="Python" width="44" height="44">
-  <img src="./assets/toolbox/ts.svg" alt="TypeScript" width="44" height="44">
-  <img src="./assets/toolbox/js.svg" alt="JavaScript" width="44" height="44">
+  <img src="./assets/toolbox/python.svg" alt="Python" title="Python" width="44" height="44">
+  <img src="./assets/toolbox/ts.svg" alt="TypeScript" title="TypeScript" width="44" height="44">
+  <img src="./assets/toolbox/js.svg" alt="JavaScript" title="JavaScript" width="44" height="44">
+  <img src="./assets/toolbox/c.svg" alt="C" title="C" width="44" height="44">
+  <img src="./assets/toolbox/cpp.svg" alt="C++" title="C++" width="44" height="44">
+  <img src="./assets/toolbox/cs.svg" alt="C#" title="C#" width="44" height="44">
+  <img src="./assets/toolbox/java.svg" alt="Java" title="Java" width="44" height="44">
 </p>
+
+<p align="center"><strong>Web &amp; data</strong></p>
+<p align="center">
+  <img src="./assets/toolbox/html.svg" alt="HTML" title="HTML" width="44" height="44">
+  <img src="./assets/toolbox/sqlite.svg" alt="SQLite" title="SQLite" width="44" height="44">
+</p>
+<p align="center">SQL</p>
 
 <p align="center"><strong>Backend</strong></p>
 <p align="center">
-  <img src="./assets/toolbox/django.svg" alt="Django" width="44" height="44">
-  <img src="./assets/toolbox/fastapi.svg" alt="FastAPI" width="44" height="44">
-  <img src="./assets/toolbox/nodejs.svg" alt="Node.js" width="44" height="44">
+  <img src="./assets/toolbox/django.svg" alt="Django" title="Django" width="44" height="44">
+  <img src="./assets/toolbox/fastapi.svg" alt="FastAPI" title="FastAPI" width="44" height="44">
+  <img src="./assets/toolbox/nodejs.svg" alt="Node.js" title="Node.js" width="44" height="44">
 </p>
 
-<p align="center"><strong>Data &amp; delivery</strong></p>
+<p align="center"><strong>Development &amp; infrastructure</strong></p>
 <p align="center">
-  <img src="./assets/toolbox/sqlite.svg" alt="SQLite" width="44" height="44">
-  <img src="./assets/toolbox/docker.svg" alt="Docker" width="44" height="44">
-  <img src="./assets/toolbox/git.svg" alt="Git" width="44" height="44">
-  <img src="./assets/toolbox/githubactions.svg" alt="GitHub Actions" width="44" height="44">
+  <img src="./assets/toolbox/docker.svg" alt="Docker" title="Docker" width="44" height="44">
+  <img src="./assets/toolbox/git.svg" alt="Git" title="Git" width="44" height="44">
+  <img src="./assets/toolbox/githubactions.svg" alt="GitHub Actions" title="GitHub Actions" width="44" height="44">
 </p>
 
 <p align="center"><strong>Testing &amp; validation</strong></p>
 <p align="center">
-  <img src="./assets/toolbox/pytest.svg" alt="pytest" width="44" height="44">
-  <img src="./assets/toolbox/playwright.svg" alt="Playwright" width="44" height="44">
-  <img src="./assets/toolbox/vitest.svg" alt="Vitest" width="44" height="44">
+  <img src="./assets/toolbox/pytest.svg" alt="pytest" title="pytest" width="44" height="44">
+  <img src="./assets/toolbox/vitest.svg" alt="Vitest" title="Vitest" width="44" height="44">
+  <img src="./assets/toolbox/playwright.svg" alt="Playwright" title="Playwright" width="44" height="44">
 </p>
-<p align="center">pytest &middot; Vitest &middot; Playwright &middot; JSON Schema &middot; Pydantic</p>
+<p align="center">Pydantic &middot; JSON Schema</p>
 
-<p align="center"><sub>Tools used in my public projects. FastAPI is used in <a href="https://github.com/AugereAbove/Vibrato">Vibrato</a>.</sub></p>
+<p align="center"><sub>The programming languages listed reflect my knowledge; my public portfolio primarily demonstrates Python and TypeScript.<br>Frameworks and tools are used in my public projects, including FastAPI in <a href="https://github.com/AugereAbove/Vibrato">Vibrato</a>.</sub></p>
 
 ## GitHub activity
 
