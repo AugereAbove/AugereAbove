@@ -1,104 +1,117 @@
-# AugereAbove
+<h1 align="center">AUGEREABOVE</h1>
 
-**Computer Science Student | Backend Developer | AI Systems & Automation**
+<p align="center">
+  <strong>Backend Engineering &middot; AI Systems &middot; Automation</strong>
+</p>
 
-I build backend services, developer tools, and automation systems, with a growing
-focus on AI agents and model evaluation.
+<p align="center">
+  I build backend APIs, developer tools, and AI workflows.<br>
+  My focus is repeatable execution, clear data boundaries, and software I can test.
+</p>
 
-I care about software that is straightforward to run, test, and debug. My projects
-use explicit validation, reproducible setups, and execution traces to make failures
-something I can inspect and fix.
+<p align="center">
+  <a href="#selected-projects"><img src="./assets/navigation/projects.svg" alt="Selected projects" height="30"></a>
+  <a href="https://github.com/AugereAbove?tab=repositories"><img src="./assets/navigation/repositories.svg" alt="Browse my repositories" height="30"></a>
+  <a href="#connect"><img src="./assets/navigation/contact.svg" alt="Get in touch" height="30"></a>
+</p>
 
-## Featured projects
+## About me
+
+I'm a Computer Science student working across backend development, AI systems, and automation.
+I like turning a small working idea into something with explicit validation, useful traces, and a reproducible setup.
+
+Right now, I'm developing my understanding of backend architecture, agent evaluation, and machine learning through practical projects.
+
+## Selected projects
 
 ### [Agent Eval](https://github.com/AugereAbove/agent-Eval)
 
-A policy lookup runtime with an offline planner and an optional LLM planner.
-Tool arguments are checked against JSON Schema before execution.
+A tool execution runtime with an offline planner and an optional LLM planner. JSON Schema validation, worker deadlines, and an evaluation dataset make tool behavior and failures inspectable.
 
-**Stack:** Python, JSON Schema, pytest, OpenAI Responses API.
+`Python` `JSON Schema` `pytest` `Responses API`
 
-**Engineering:** Planner and tool calls run in worker processes with deadlines.
-The evaluation suite separates successful lookups, failure handling, and safety checks.
-
-The default workflow runs without credentials. Provider integration is covered by
-mocked tests; those tests are distinct from live model evaluations.
+[Design](https://github.com/AugereAbove/agent-Eval/blob/main/docs/design.md) &middot; [Evaluation guide](https://github.com/AugereAbove/agent-Eval/blob/main/docs/evaluation.md) &middot; [CI](https://github.com/AugereAbove/agent-Eval/actions/workflows/test.yml)
 
 ### [Multisite Content API](https://github.com/AugereAbove/multisite-content-api)
 
-A Django REST API for managing pages across several sites, with draft publishing
-and staff write permissions.
+A Django REST API for content across multiple sites. Site-scoped queries, draft visibility, and staff write permissions are backed by database constraints and API tests.
 
-**Stack:** Python, Django, Django REST Framework, SQLite, Docker.
+`Python` `Django REST Framework` `SQLite` `Docker`
 
-**Engineering:** Queries are scoped to the site in the URL, and a database constraint
-keeps page slugs unique within each site. Tests cover visibility and write access.
-
-A local development API with migrations, demo data, admin access, and CI.
-Staff permissions are global; site specific editor roles are not implemented.
+[API reference](https://github.com/AugereAbove/multisite-content-api/blob/main/docs/api.md) &middot; [Run locally](https://github.com/AugereAbove/multisite-content-api#quick-start) &middot; [CI](https://github.com/AugereAbove/multisite-content-api/actions/workflows/test.yml)
 
 ### [AI Browser Agent](https://github.com/AugereAbove/AI-browser-agent)
 
-A browser automation runtime with bounded read sessions, a deterministic storefront
-task runner, and persistent run history.
+A bounded browser automation runtime with an independently verified storefront workflow and SQLite run history. The working demo uses deterministic tasks; LLM planning remains planned.
 
-**Stack:** TypeScript, Node.js, Playwright, Zod, SQLite, Vitest.
+`TypeScript` `Node.js` `Playwright` `Zod` `Vitest`
 
-**Engineering:** An independent verifier checks extracted products against the
-fixture catalog before a run can be recorded as successful.
+[Run the demo](https://github.com/AugereAbove/AI-browser-agent#verified-fixture-task) &middot; [Read sessions](https://github.com/AugereAbove/AI-browser-agent#read-sessions) &middot; [Run history](https://github.com/AugereAbove/AI-browser-agent#saved-runs)
 
-The fixture workflow is implemented. Model planning, a dashboard, and an approval
-service remain planned capabilities.
+### [AdaptiveEdge](https://github.com/AugereAbove/adaptive-Edge) &middot; <sub>Experimental</sub>
 
-### [AdaptiveEdge](https://github.com/AugereAbove/adaptive-Edge)
+A library for language model benchmarking and constrained model selection. It records observations in SQLite and compares model configurations using quality, latency, and memory evidence.
 
-A library in progress for language model benchmarking and model selection under
-quality, latency, and memory constraints.
+`Python` `Pydantic` `SQLite` `Ollama`
 
-**Stack:** Python, Pydantic, SQLite, Ollama integration.
+[Library source](https://github.com/AugereAbove/adaptive-Edge/tree/main/src/adaptiveedge) &middot; [Benchmark runner](https://github.com/AugereAbove/adaptive-Edge/blob/main/src/adaptiveedge/benchmarks/runner.py)
 
-**Engineering:** Benchmark observations are stored as immutable records. Selection
-uses comparable historical evidence and can decline when constraints are unmet.
+## Technology toolbox
 
-Benchmark runners, backend adapters, and selection components are implemented.
-Its declared CLI entry point has no implementation in the current public source.
+<p align="center"><strong>Languages</strong></p>
+<p align="center">
+  <img src="./assets/toolbox/python.svg" alt="Python" width="44" height="44">
+  <img src="./assets/toolbox/ts.svg" alt="TypeScript" width="44" height="44">
+  <img src="./assets/toolbox/js.svg" alt="JavaScript" width="44" height="44">
+</p>
 
-## Technical stack
+<p align="center"><strong>Backend</strong></p>
+<p align="center">
+  <img src="./assets/toolbox/django.svg" alt="Django" width="44" height="44">
+  <img src="./assets/toolbox/fastapi.svg" alt="FastAPI" width="44" height="44">
+  <img src="./assets/toolbox/nodejs.svg" alt="Node.js" width="44" height="44">
+</p>
 
-### Programming languages
+<p align="center"><strong>Data &amp; delivery</strong></p>
+<p align="center">
+  <img src="./assets/toolbox/sqlite.svg" alt="SQLite" width="44" height="44">
+  <img src="./assets/toolbox/docker.svg" alt="Docker" width="44" height="44">
+  <img src="./assets/toolbox/git.svg" alt="Git" width="44" height="44">
+  <img src="./assets/toolbox/githubactions.svg" alt="GitHub Actions" width="44" height="44">
+</p>
 
-Python, TypeScript, JavaScript, and SQL.
+<p align="center"><strong>Testing &amp; validation</strong></p>
+<p align="center">
+  <img src="./assets/toolbox/pytest.svg" alt="pytest" width="44" height="44">
+  <img src="./assets/toolbox/playwright.svg" alt="Playwright" width="44" height="44">
+  <img src="./assets/toolbox/vitest.svg" alt="Vitest" width="44" height="44">
+</p>
+<p align="center">pytest &middot; Vitest &middot; Playwright &middot; JSON Schema &middot; Pydantic</p>
 
-### Backend frameworks
+<p align="center"><sub>Tools used in my public projects. FastAPI is used in <a href="https://github.com/AugereAbove/Vibrato">Vibrato</a>.</sub></p>
 
-Django, Django REST Framework, and FastAPI.
-FastAPI is used in the [Vibrato backend](https://github.com/AugereAbove/Vibrato).
+## GitHub activity
 
-### Developer tools and infrastructure
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/activity/activity-mobile.svg">
+    <img src="./assets/activity/activity.svg" alt="Public GitHub contribution history for the current year" width="100%">
+  </picture>
+</p>
 
-Git, GitHub Actions, Docker, Node.js, pnpm, and SQLite.
-Local development environments and repeatable dependency installation.
+<p align="center">
+  <img src="./assets/activity/overview.svg" alt="Public repository, star, fork, and language totals" width="390">
+  <img src="./assets/activity/languages.svg" alt="Public repositories grouped by their primary language" width="390">
+</p>
 
-### AI/ML engineering
+<p align="center"><sub>Real public account data, refreshed daily. <a href="./docs/activity.md">Metric scope, sources, and attribution</a> &middot; <a href="https://github.com/AugereAbove/AugereAbove/actions/workflows/profile-summary-cards.yml">Refresh workflow</a></sub></p>
 
-LLM tool calling, JSON Schema and Pydantic validation, evaluation datasets,
-Ollama integration, and constrained model selection.
+## Connect
 
-### Testing and automation
+I'm open to backend and software engineering opportunities, including remote roles, and collaborations on developer tools, automation, and AI systems.
 
-pytest, Vitest, and Playwright.
-API permission tests, deterministic browser fixtures, failure injection, and CI.
-
-## Current focus
-
-- AI agents whose tool use and outcomes can be evaluated separately.
-- Backend architecture with clear data boundaries and permission rules.
-- Reliable automation with bounded execution and useful failure records.
-- Machine learning foundations and reproducible model benchmarking.
-
-## Contact
-
-I'm open to backend and software engineering opportunities, including remote roles,
-and collaborations on developer tools, automation, and AI systems.
-
-For project discussions, use the issue tracker in the relevant repository.
+<p align="center">
+  <a href="https://github.com/AugereAbove?tab=repositories">Explore my work</a>
+  &nbsp;&middot;&nbsp;
+  <a href="https://github.com/AugereAbove/agent-Eval/issues">Discuss a project</a>
+</p>
