@@ -28,6 +28,7 @@ jobs:
       - name: Check out profile
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
+          ref: main
           persist-credentials: false
       - name: Test the generator
         run: python3 -m unittest discover -s tests -v

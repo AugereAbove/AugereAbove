@@ -20,7 +20,7 @@ The contribution calendar follows GitHub's contribution rules. It is not a compl
 
 The workflow uses GitHub's repository token, not a personal access token. The repository list is explicitly filtered to public, owned, nonfork repositories. Calendar requests never send authorization headers. Only the refresh job requests `contents: write`, which is needed to commit the generated files. There are no pull request triggers, approval permissions, or unrelated repository writes.
 
-The sole external action is the official `actions/checkout` release v7.0.1, pinned to verified commit `3d3c42e5aac5ba805825da76410c181273ba90b1`. The generator uses Python's standard library and the GitHub CLI supplied by the hosted runner; no third-party statistics action or service runs with the token. Checkout does not persist credentials. Push authentication is configured only for the final push step.
+The sole external action is the official `actions/checkout` release v7.0.1, pinned to verified commit `3d3c42e5aac5ba805825da76410c181273ba90b1`. The generator uses Python's standard library and the GitHub CLI supplied by the hosted runner; no third-party statistics action or service runs with the token. Each run checks out the current main branch rather than a stale triggering revision. Checkout does not persist credentials. Push authentication is configured only for the final push step.
 
 Both author and committer are configured as AugereAbove with the account's GitHub noreply email. Automatic commits use `Refresh public GitHub activity`. Pushes use normal fast-forward behavior. If another update wins a race, the push fails rather than overwriting it; rerun the workflow after reviewing the failure.
 
