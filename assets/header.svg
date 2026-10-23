@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title description">
+  <title id="title">AugereAbove</title>
+  <desc id="description">Matte black, green and muted gold. Signals travel along fine circuit paths beneath the AugereAbove wordmark. Animation respects reduced motion preferences.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#21352b" stroke-width="0.6"/>
+    </pattern>
+    <clipPath id="panel"><rect x="1" y="1" width="1198" height="338" rx="18"/></clipPath>
+    <style>
+      .signal { stroke-dasharray: 22 1180; animation: transmit 14s linear infinite; }
+      .signal.second { animation-delay: -7s; animation-duration: 18s; }
+      .signal.third { animation-delay: -4s; animation-duration: 22s; }
+      .beacon { animation: breathe 6s ease-in-out infinite; }
+      .beacon.second { animation-delay: -3s; }
+      .trace { stroke-dasharray: 170 1500; animation: perimeter 28s linear infinite; }
+      @keyframes transmit { from { stroke-dashoffset: 1202; } to { stroke-dashoffset: 0; } }
+      @keyframes perimeter { from { stroke-dashoffset: 1670; } to { stroke-dashoffset: 0; } }
+      @keyframes breathe { 0%, 100% { opacity: .3; } 50% { opacity: .9; } }
+      @media (prefers-reduced-motion: reduce) {
+        .signal, .trace, .beacon { animation: none; }
+        .signal { stroke-dasharray: none; opacity: .35; }
+        .trace { opacity: .4; }
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="340" fill="#0b0e0c"/>
+    <rect x="720" y="0" width="480" height="340" fill="url(#grid)" opacity=".26"/>
+    <path d="M850 0v62l84 84h266M970 0v34l-35 35M1200 80h-94l-58 58v202" fill="none" stroke="#1b2b3b" stroke-width="1" opacity=".6"/>
+    <path d="M0 268h108l30-30h120l30 30h150l35-35h253l35 35h301l30-30h108" fill="none" stroke="#213b2c" stroke-width="1.2"/>
+    <path d="M0 296h216l32-32h95l32 32h270l32-32h178l32 32h313" fill="none" stroke="#1d2d24" stroke-width="1.2"/>
+    <path d="M0 268h108l30-30h120l30 30h150l35-35h253l35 35h301l30-30h108" class="signal" fill="none" stroke="#7bd49b" stroke-width="2"/>
+    <path d="M0 296h216l32-32h95l32 32h270l32-32h178l32 32h313" class="signal second" fill="none" stroke="#bca675" stroke-width="1.5"/>
+    <path d="M850 0v62l84 84h266" class="signal third" fill="none" stroke="#38566c" stroke-width="1.5"/>
+    <g fill="#0b0e0c" stroke="#42654c" stroke-width="1.5">
+      <circle cx="138" cy="238" r="4"/>
+      <circle cx="473" cy="233" r="4"/>
+      <circle cx="761" cy="268" r="4"/>
+      <circle cx="1092" cy="238" r="4"/>
+      <circle cx="677" cy="264" r="3" stroke="#88774f"/>
+    </g>
+    <circle class="beacon" cx="138" cy="238" r="8" fill="none" stroke="#7bd49b" stroke-width="1"/>
+    <circle class="beacon second" cx="1092" cy="238" r="8" fill="none" stroke="#bca675" stroke-width="1"/>
+    <path d="M48 59 62 35 76 59M54 49h16" fill="none" stroke="#7bd49b" stroke-width="2.5"/>
+    <path d="M96 49h61" stroke="#2a3b30" stroke-width="1"/>
+    <g fill="#bca675">
+      <rect x="1100" y="45" width="4" height="8" rx="1" opacity=".3"/>
+      <rect x="1112" y="41" width="4" height="12" rx="1" opacity=".5"/>
+      <rect x="1124" y="37" width="4" height="16" rx="1" opacity=".75"/>
+      <rect x="1136" y="33" width="4" height="20" rx="1"/>
+    </g>
+    <text x="600" y="157" text-anchor="middle" fill="#ecf1eb" font-family="Segoe UI, Arial, sans-serif" font-size="85" font-weight="600" letter-spacing="8">AUGERE<tspan fill="#7bd49b">ABOVE</tspan></text>
+    <path d="M538 193h43m38 0h43" stroke="#3d4a36" stroke-width="1"/>
+    <path d="m600 187 6 6-6 6-6-6Z" fill="none" stroke="#bca675" stroke-width="1.2"/>
+    <path d="M48 314h24m1056 0h24" stroke="#58654c" stroke-width="1"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="338" rx="18" fill="none" stroke="#2a382e" stroke-width="1.5"/>
+  <path d="M23 1h1154a22 22 0 0 1 22 22v294a22 22 0 0 1-22 22H23a22 22 0 0 1-22-22V23A22 22 0 0 1 23 1Z" class="trace" fill="none" stroke="#6a8d61" stroke-width="1.2" opacity=".6"/>
+</svg>

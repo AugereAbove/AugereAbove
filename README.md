@@ -1,4 +1,6 @@
-<h1 align="center">AUGEREABOVE</h1>
+<h1 align="center">
+  <img src="./assets/header.svg" alt="AUGEREABOVE" width="100%">
+</h1>
 
 <p align="center">
   <strong>Backend Engineering &middot; AI Systems &middot; Automation</strong>
