@@ -106,7 +106,7 @@ def activity_svg(snapshot):
     total = sum(day['count'] for day in days)
     active = sum(day['count'] > 0 for day in days)
     body = label(26, 33, 'PUBLIC CONTRIBUTION HISTORY', 15, BLUE, '600')
-    body += label(26, 55, f'{start.year} to date Â· {active} active days', 12, MUTED)
+    body += label(26, 55, f'{start.year} to date | {active} active days', 12, MUTED)
     body += label(872, 35, f'{total} contributions', 18, TEXT, '600', 'end')
     columns = (date.fromisoformat(days[-1]['date']) - first).days // 7 + 1
     step = min(15, 790 / max(columns, 1))
@@ -126,7 +126,7 @@ def activity_svg(snapshot):
     body += label(26, 107, 'Mon', 10, MUTED)
     body += label(26, 137, 'Wed', 10, MUTED)
     body += label(26, 167, 'Fri', 10, MUTED)
-    body += label(26, 218, 'Source: public GitHub profile Â· refreshed ' + snapshot['as_of'], 11, MUTED)
+    body += label(26, 218, 'Source: public GitHub profile | refreshed ' + snapshot['as_of'], 11, MUTED)
     body += label(721, 218, 'Less', 10, MUTED)
     for index, color in enumerate(PALETTE):
         body += f'<rect x="{753+index*16}" y="207" width="11" height="11" rx="2" fill="{color}"/>'
@@ -140,7 +140,7 @@ def monthly_svg(snapshot):
     maximum = max(months.values(), default=0)
     total = sum(months.values())
     body = label(24, 32, 'PUBLIC ACTIVITY', 15, BLUE, '600')
-    body += label(24, 55, f'{snapshot["as_of"][:4]} to date Â· {total} contributions', 13, MUTED)
+    body += label(24, 55, f'{snapshot["as_of"][:4]} to date | {total} contributions', 13, MUTED)
     step = min(34, 390 / max(len(months), 1))
     for index, (month, count) in enumerate(sorted(months.items())):
         height = 95 * count / max(maximum, 1)
@@ -161,7 +161,7 @@ def overview_svg(snapshot):
         x, y = 26 + index % 2 * 212, 84 + index // 2 * 83
         body += label(x, y, value, 34, TEXT, '600')
         body += label(x, y+25, name, 13, MUTED)
-    body += label(24, 236, 'Public, owned repositories Â· forks excluded', 11, MUTED)
+    body += label(24, 236, 'Public, owned repositories | forks excluded', 11, MUTED)
     return card(440, 260, 'Public repository statistics', 'Repository totals, received stars and forks, and primary language count.', body)
 
 def languages_svg(snapshot):
@@ -177,7 +177,7 @@ def languages_svg(snapshot):
         body += label(414, y, f'{count} / {total}', 12, MUTED, anchor='end')
         body += f'<rect x="24" y="{y+8}" width="390" height="7" rx="3" fill="#1b2636"/>'
         body += f'<rect x="24" y="{y+8}" width="{390*count/max(total,1):.1f}" height="7" rx="3" fill="{colors.get(name, BLUE)}"/>'
-    body += label(24, 236, 'Primary language per repo Â· not a skill score', 11, MUTED)
+    body += label(24, 236, 'Primary language per repo | not a skill score', 11, MUTED)
     return card(440, 260, 'Primary language by public repository', 'Each public nonfork repository is counted once. Unclassified means GitHub reports no primary language.', body)
 
 def build(user, output):
