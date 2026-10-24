@@ -26,6 +26,14 @@ Right now, I'm developing my understanding of backend architecture, agent evalua
 
 ## Selected projects
 
+### [Oathwire](https://github.com/AugereAbove/oathwire)
+
+A TypeScript event API that queues signed HTTPS webhook deliveries, records attempts, retries temporary failures, and supports replay. It includes idempotency and destination safety checks; it is implemented and locally tested, but not deployed.
+
+`TypeScript` `Node.js` `AWS Lambda` `DynamoDB` `SQS`
+
+[Architecture](https://github.com/AugereAbove/oathwire/blob/main/docs/architecture.md) &middot; [Verification](https://github.com/AugereAbove/oathwire/blob/main/docs/verification.md)
+
 ### [Agent Eval](https://github.com/AugereAbove/agent-Eval)
 
 A tool execution runtime with an offline planner and an optional LLM planner. JSON Schema validation, worker deadlines, and an evaluation dataset make tool behavior and failures inspectable.
